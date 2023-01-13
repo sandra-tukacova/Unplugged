@@ -86,6 +86,58 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+  header{
+    display: flex;
+  }
+
+  .content-wrapper{
+    display: flex;
+  }
+
+  figure{
+    display: flex;
+  }
+
+  nav{
+    display: flex;
+  }
+
+  .hero{
+    display: flex;
+  }
+
+  aside{
+    display: flex;
+  }
+
+  .features{
+    display: flex;
+  }
+
+  .reviews{
+    display: flex;
+  }
+
+  footer{
+    display: flex;
+  }
+
+  .footer-content{
+    display: flex;
+  }
+
+  .contact{
+    display: flex;
+  }
+
+  .social{
+    display: flex;
+  }
+
+  .social-icons{
+    display: flex;
+    list-style: none;
+  }
 
 /* ==========================================================================
    Helper classes
