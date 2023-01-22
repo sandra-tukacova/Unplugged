@@ -86,58 +86,120 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-  header{
-    display: flex;
-  }
+/* -------------------- Base Header - Footer Styles -------------------- */
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-  .content-wrapper{
-    display: flex;
-  }
+header .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-  figure{
-    display: flex;
-  }
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-  nav{
-    display: flex;
-  }
+header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
 
-  .hero{
-    display: flex;
-  }
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+  /*even amount of space around every icon*/
+  align-items: center;
+}
 
-  aside{
-    display: flex;
-  }
+footer .social-icons p {
+  display: flex;
+  justify-content: center;
+  /*every icon is centered*/
+  align-items: center;
+}
 
-  .features{
-    display: flex;
-  }
+/*------------------------------------Mobile Styles-Homepage-----------------*/
 
-  .reviews{
-    display: flex;
-  }
+/*Hero Area*/
 
-  footer{
-    display: flex;
-  }
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
 
-  .footer-content{
-    display: flex;
-  }
+/*Aside*/
 
-  .contact{
-    display: flex;
-  }
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
-  .social{
-    display: flex;
-  }
+/*Features*/
 
-  .social-icons{
-    display: flex;
-    list-style: none;
-  }
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*Reviews*/
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/*-----------------------Mobile Styles-ABOUT Page-----------------------------*/
+.mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/*-----------------------Mobile Styles-FAQ Page-----------------------------*/
+
+.questions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.questions .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 
 /* ==========================================================================
    Helper classes
@@ -232,9 +294,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -245,6 +307,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -261,11 +324,11 @@ textarea {
   }
 
   a[href]::after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
 
   abbr[title]::after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
 
   /*
@@ -312,4 +375,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
